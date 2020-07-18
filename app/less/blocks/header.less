@@ -1,0 +1,26 @@
+.header {
+  position: relative;
+  margin-bottom: 95px;
+}
+
+.site-desc {
+  position: absolute;
+  right: -50px;
+  top: 58px;
+  transform: rotate(-90deg);
+
+  @media (max-width: 1400px) {
+    right: 30px;
+    top: 170px;
+    .site-desc__content {
+      color: #fff;
+    }
+  }
+}
+.site-desc__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  white-space: nowrap; 
+  .vertical-text;
+}

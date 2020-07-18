@@ -1,0 +1,147 @@
+.shop {
+  padding-top: 95px;
+  padding-bottom: 110px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -330px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 984px;
+    z-index: -1;
+    // background-color: #B2D7F4;
+    background-image: url("../img/bg/bg-lines.png"), url("../img/bg/bg-water.jpg");
+    background-repeat: repeat-Y, no-repeat;
+    background-position: center, center;
+    background-size: auto, cover;
+
+  }
+}
+
+.shop-slider-wrupper {
+  height: 565px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.shop-slider-special-holder {
+  position: absolute;
+  left: 0;
+  right: -85px;
+}
+
+.shop-slider {
+  // background-color: #5a5353;
+  // margin-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#shopSlider.owl-carousel .owl-item img {
+ width: auto;
+}
+
+.shopSlider-controls {
+  position: relative;
+}
+
+.shopSlider-arrow {
+  width: 40px;
+  height: 48px;
+  padding: 15px;
+  cursor: pointer;
+  position: absolute;
+  bottom: calc(140px + 80px);
+  z-index: 9;
+  img {
+    vertical-align: top;
+  }
+  &--left {
+    left: -70px;
+    transform: translate(-100%, 0%);
+  }
+  &--right {
+    right: -70px;
+    transform: translate(100%, 0%);
+  }
+}
+
+.board {
+  position: relative;
+  width: 435px;
+  height: 435px;
+  margin-top: 130px;
+}
+
+.board__img-holder {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 320px;
+  background-color: #e8e8e8;
+  // background-color: #f0ecec;
+
+  .board__img {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.shop-link-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.board-desc {
+  width: 210px;
+  // background-color: #ff0000;
+  position: absolute;
+  top: 196px;
+  left: 216px;
+}
+.board__cat {
+  color: #7a7a7a;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+.board__title {
+  color: #333333;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.26px;
+}
+.board-buy {
+  margin-top: 38px;
+  margin-left: 55px;
+}
+.board-buy__price {
+  color: #ce60a8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  margin-bottom: 3px;
+}
+.board-buy__link {
+  color: #333333;
+  font-family: 'League-Spartan', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+  margin-left: 4px;
+}

@@ -1,0 +1,51 @@
+.article {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.article__desc {
+  width: 462px;
+  padding: 80px 50px 0 70px;
+}
+.article__title {
+  color: #333333;
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: 0.42px;
+  position: relative;
+  margin-bottom: 45px;
+}
+.article__title::before {
+  content: attr(data-number);
+  /* Style for "01" */
+  color: #f9f9f9;
+  font-family: 'League-Spartan', sans-serif;
+  font-size: 130px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: 13px;
+  position: absolute;
+  left: 0;
+  top: -17px;
+  z-index: -1;
+}
+.article__title::after {
+  content: "";
+  width: 23px;
+  height: 2px;
+  background-color: #5da8ef;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+.article__text {
+  margin-bottom: 60px;
+  color: rgba(97, 97, 97, 0.65);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
