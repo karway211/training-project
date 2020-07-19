@@ -1,7 +1,13 @@
 .shop {
-  padding-top: 95px;
-  padding-bottom: 110px;
+  padding-top: 47.5px;
+  padding-bottom: 55px;
   position: relative;
+}
+@media (min-width: 1254px) {
+  .shop {
+    padding-top: 95px;
+    padding-bottom: 110px;
+  }
 }
 .shop::before {
   position: absolute;
@@ -26,7 +32,12 @@
 .shop-slider-special-holder {
   position: absolute;
   left: 0;
-  right: -85px;
+  right: 0;
+}
+@media (min-width: 1394px) {
+  .shop-slider-special-holder {
+    right: -85px;
+  }
 }
 .shop-slider {
   margin-bottom: 80px;
@@ -45,25 +56,64 @@
   padding: 15px;
   cursor: pointer;
   position: absolute;
-  bottom: calc(140px + 80px);
+  bottom: 140px;
   z-index: 9;
+}
+@media (min-width: 650px) {
+  .shopSlider-arrow {
+    bottom: calc(140px + 80px);
+  }
 }
 .shopSlider-arrow img {
   vertical-align: top;
 }
 .shopSlider-arrow--left {
-  left: -70px;
-  transform: translate(-100%, 0%);
+  left: -15px;
+}
+@media (min-width: 650px) {
+  .shopSlider-arrow--left {
+    left: 0;
+    transform: translate(100%, 0%);
+  }
+}
+@media (min-width: 1254px) {
+  .shopSlider-arrow--left {
+    left: -70px;
+  }
 }
 .shopSlider-arrow--right {
-  right: -70px;
-  transform: translate(100%, 0%);
+  right: -15px;
+}
+@media (min-width: 650px) {
+  .shopSlider-arrow--right {
+    right: 0;
+    transform: translate(-100%, 0%);
+  }
+}
+@media (min-width: 1254px) {
+  .shopSlider-arrow--right {
+    right: -70px;
+  }
 }
 .board {
   position: relative;
-  width: 435px;
+  width: 250px;
   height: 435px;
   margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 650px) {
+  .board {
+    padding-left: 185px;
+    width: 620px;
+  }
+}
+@media (min-width: 1254px) {
+  .board {
+    margin-left: 0;
+    padding-left: 0;
+  }
 }
 .board__img-holder {
   position: absolute;
@@ -72,6 +122,16 @@
   width: 250px;
   height: 320px;
   background-color: #e8e8e8;
+}
+@media (min-width: 650px) {
+  .board__img-holder {
+    left: 185px;
+  }
+}
+@media (min-width: 1254px) {
+  .board__img-holder {
+    left: 0;
+  }
 }
 .board__img-holder .board__img {
   position: absolute;
@@ -87,7 +147,21 @@
   width: 210px;
   position: absolute;
   top: 196px;
-  left: 216px;
+  right: 0;
+  z-index: 9;
+  text-align: right;
+}
+@media (min-width: 650px) {
+  .board-desc {
+    right: auto;
+    left: 401px;
+    text-align: left;
+  }
+}
+@media (min-width: 1254px) {
+  .board-desc {
+    left: 216px;
+  }
 }
 .board__cat {
   color: #7a7a7a;

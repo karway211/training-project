@@ -1,12 +1,12 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var less = require('gulp-less');
-var plumber = require('gulp-plumber');
-var notify = require('gulp-notify');
-var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('gulp-autoprefixer');
-var watch = require('gulp-watch');
-var fileinclude = require('gulp-file-include');
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+const less = require('gulp-less');
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+const watch = require('gulp-watch');
+const fileinclude = require('gulp-file-include');
 
 gulp.task('server', ['styles', 'html'], function() {
 	

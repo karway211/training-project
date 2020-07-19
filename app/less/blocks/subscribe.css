@@ -17,24 +17,39 @@
   background-size: auto, cover;
 }
 .subscribe {
-  width: 590px;
+  max-width: 590px;
   margin: 0 auto;
   margin-top: 50px;
-  padding-top: 160px;
-  padding-bottom: 75px;
+  padding-top: 80px;
+  padding-bottom: 37.5px;
+  padding-left: 15px;
+  padding-right: 15px;
   position: relative;
   text-align: center;
+}
+@media (min-width: 1254px) {
+  .subscribe {
+    padding-top: 160px;
+    padding-bottom: 75px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .subscribe::before {
   content: "";
   position: absolute;
   display: block;
   width: 2px;
-  height: 100px;
+  height: 50px;
   background-color: #5da8ef;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
+}
+@media (min-width: 1254px) {
+  .subscribe::before {
+    height: 100px;
+  }
 }
 .subscribe-form {
   display: flex;
@@ -63,6 +78,7 @@
 }
 .subscribe__submit {
   width: 50px;
+  flex: 0 0 50px;
   height: 50px;
   background-color: #5da8ef;
   background-image: url('../img/controls/subscribe-arrow.svg');

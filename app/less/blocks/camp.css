@@ -1,10 +1,15 @@
 .camp {
-  min-height: 475px;
+  min-height: 237.5px;
   position: relative;
   margin-top: 75px;
 }
+@media (min-width: 768px) {
+  .camp {
+    min-height: 475px;
+  }
+}
 .camp__img {
-  width: 50%;
+  width: 20%;
   position: absolute;
   left: 0;
   top: 0;
@@ -14,10 +19,44 @@
   background-position: center;
   background-size: cover;
 }
+@media (min-width: 400px) {
+  .camp__img {
+    width: 30%;
+  }
+}
+@media (min-width: 500px) {
+  .camp__img {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .camp__img {
+    width: 50%;
+  }
+}
 .camp__desc {
-  width: 50%;
-  padding-top: 100px;
-  padding-left: 44px;
+  width: 80%;
+  padding-top: 50px;
+  padding-left: 22px;
+  padding-bottom: 50px;
+}
+@media (min-width: 400px) {
+  .camp__desc {
+    width: 70%;
+  }
+}
+@media (min-width: 500px) {
+  .camp__desc {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .camp__desc {
+    width: 50%;
+    padding-top: 100px;
+    padding-left: 44px;
+    padding-bottom: 0;
+  }
 }
 .camp__label {
   color: rgba(11, 12, 17, 0.27);
@@ -29,15 +68,28 @@
   letter-spacing: 5.58px;
 }
 .camp__address {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  padding-left: 48px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 0;
   color: #333333;
   font-family: 'Playfair Display', serif;
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 46px;
+  line-height: 1.34;
   letter-spacing: 0.32px;
+}
+@media (min-width: 400px) {
+  .camp__address {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) {
+  .camp__address {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 32px;
+    padding-left: 48px;
+  }
 }
 .camp__desc .read-more-link {
   color: #5da8ef;

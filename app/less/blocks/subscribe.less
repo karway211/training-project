@@ -10,7 +10,6 @@
     width: 100%;
     height: 1335px;
     z-index: -1;
-    // background-color: #B2D7F4;
     background-image: url("../img/bg/bg-lines.png"), url("../img/bg/bg-surfer.jpg");
     background-repeat: repeat-Y, no-repeat;
     background-position: center, center;
@@ -19,24 +18,37 @@
 }
 
 .subscribe {
-  width: 590px;
+  max-width: 590px;
   margin: 0 auto;
   margin-top: 50px;
-  padding-top: 160px;
-  padding-bottom: 75px;
+  padding-top: 160px/2;
+  padding-bottom: 75px/2;
+  padding-left: 15px;
+  padding-right: 15px;
   position: relative;
   text-align: center;
+
+  @media (min-width: 1254px) {
+    padding-top: 160px;
+    padding-bottom: 75px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   &::before {
     content: "";
     position: absolute;
     display: block;
     width: 2px;
-    height: 100px;
+    height: 100px/2;
     background-color: #5da8ef;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
+
+    @media (min-width: 1254px) {
+      height: 100px;
+    }
   }
 }
 
@@ -70,6 +82,7 @@
 
 .subscribe__submit {
   width: 50px;
+  flex: 0 0 50px;
   height: 50px;
   background-color: #5da8ef;
   background-image: url('../img/controls/subscribe-arrow.svg');

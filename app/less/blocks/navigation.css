@@ -1,0 +1,124 @@
+.navigation-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1254px) {
+  .navigation-wrapper {
+    flex-direction: row;
+    height: 128px;
+  }
+}
+.nav-logo-wrapper {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (min-width: 1254px) {
+  .nav-logo-wrapper {
+    margin-right: 190px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: auto;
+  }
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'League-Spartan', sans-serif;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (min-width: 1254px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+  }
+}
+.navigation__item {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.navigation__item:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .navigation__item {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+  .navigation__item:last-child {
+    margin-right: 0;
+  }
+}
+.navigation__link {
+  color: #000;
+  text-decoration: none;
+  color: rgba(11, 12, 17, 0.9);
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.58px;
+  font-family: "Leaque Spartan";
+}
+.site-desc {
+  width: auto;
+  display: block;
+  position: static;
+}
+@media (min-width: 1254px) {
+  .site-desc {
+    position: absolute;
+    right: 30px;
+    top: 170px;
+    z-index: 9;
+  }
+}
+@media (min-width: 1400px) {
+  .site-desc {
+    position: absolute;
+    right: -50px;
+    top: 58px;
+    transform: rotate(-90deg);
+    z-index: 9;
+  }
+}
+.site-desc__content {
+  margin-bottom: 20px;
+  position: static;
+  color: rgba(11, 12, 17, 0.2);
+  font-family: 'League-Spartan', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+  white-space: nowrap;
+}
+@media (min-width: 1254px) {
+  .site-desc__content {
+    color: #fff;
+  }
+}
+@media (min-width: 1400px) {
+  .site-desc__content {
+    color: rgba(11, 12, 17, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
